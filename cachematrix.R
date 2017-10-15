@@ -1,5 +1,7 @@
 ##Paras Saleem's matrix cache function
 
+##The following code makes a cache matrix and stores its inverse for a later retrieval
+
 makeCacheMatrix <- function(x = matrix()) {
 
     m <- NULL
@@ -15,6 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
   }
 
+
+##This part of the code retrieves the inverse from the cached value
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
